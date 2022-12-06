@@ -10,13 +10,13 @@ To dig into this idea, I used data both provided by Spotify and downloaded by Sp
 
 ### Streaming History
 
-This first section is using my account data found [here](https://www.spotify.com/us/account/privacy/). The turnaround time for this request took around ~5 days. I received a `.zip` folder with different files about my playlists, search queries, payment, followers/following accounts, stream history, etc. from the last 12 months. For this project, I am going to be focusing on the latter (stream history).
+The first section uses my streaming history using my account data found [here](https://www.spotify.com/us/account/privacy/). The turnaround time for this request took around ~5 days. I received a `.zip` folder with different files about my playlists, search queries, payment, followers/following accounts, stream history, etc. from the last 12 months. For this project, I am going to be focusing on the latter (streaming history).
 
 ### Spotify's Web API
 
 In this next section, I will use data from Spotify's API.
 
-Prior to the code below, I created a developer account [here](https://developer.spotify.com/dashboard/). You do not need a Spotify Premium subscription, but will need a Spotify account to access this tool. The process to retrieve the data is a little complicated. [Steven Morse's post titled "Exploring the Spotify API in Python"](https://stmorse.github.io/journal/spotify-api.html) and [John Mannelly's blog post titled "How to Build Your Own Spotify Wrapped with Python, Spotipy and Glide Apps"](https://jman4190.medium.com/build-your-own-spotify-wrapped-with-python-spotify-and-glide-apps-493dc7da20b) were excellent resources I used to help me get the information needed. 
+I created a developer account [here](https://developer.spotify.com/dashboard/). You do not need a Spotify Premium subscription, but will need a Spotify account to access this tool. The process to retrieve the data is a little complicated. [Steven Morse's post titled "Exploring the Spotify API in Python"](https://stmorse.github.io/journal/spotify-api.html) and [John Mannelly's blog post titled "How to Build Your Own Spotify Wrapped with Python, Spotipy and Glide Apps"](https://jman4190.medium.com/build-your-own-spotify-wrapped-with-python-spotify-and-glide-apps-493dc7da20b) were excellent resources I used to help me get the information needed. 
 
 Part of the reason I chose this route was because the streaming data provided by Spotify (used in the section prior to this) only contained simple information like the artist's name, track name, and date. I was interested in getting more detail about the music I listen to. 
 
